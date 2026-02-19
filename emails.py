@@ -1,9 +1,17 @@
 # Written by Aadi, sabotaged by Meyan 
 
+# ------------------------------
+#             Imports
+# ------------------------------
+
 import smtplib
 import time
 import os
 from email.message import EmailMessage
+
+# ---------------------------
+#           Constants
+# ---------------------------
 
 SMTP_SERVER = "smtp.gmail.com"   
 SMTP_PORT = 587
@@ -16,11 +24,15 @@ MAX_EMAILS = 1500
 
 sent_count = 0
 
+
+# Server things
 server = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)
 server.starttls()
 server.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
 
-def send_mail(rollno:str,firstname:str,email:str):
+def send_mail(rollno:str,firstname:str,email:str) -> None:
+        ''' Sends Mail to the specified rollno, firstname and email '''
+
         global sent_count
 
         msg = EmailMessage()
@@ -67,4 +79,3 @@ Free Students’ Union, Pulchowk Campus - 2081
         except smtplib.SMTPException as e:
             print("SMTP ERROR — STOPPING:", e)
             return
-server.quit()
