@@ -1,7 +1,6 @@
 # Written by Aadi, sabotaged by Meyan 
 
 import smtplib
-import csv
 import time
 import os
 from email.message import EmailMessage
@@ -21,7 +20,7 @@ server = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)
 server.starttls()
 server.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
 
-def send_mail(rollno,firstname,email):
+def send_mail(rollno:str,firstname:str,email:str):
         global sent_count
 
         msg = EmailMessage()

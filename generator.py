@@ -55,4 +55,4 @@ with open(CSV_PATH, newline='', encoding='utf-8') as csvfile:
         break
 
 print("Done generating all invitations.")
-
+emails.server.quit()
