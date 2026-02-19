@@ -18,7 +18,7 @@ load_dotenv()
 SMTP_SERVER = "smtp.gmail.com"   
 SMTP_PORT = 587
 
-EMAIL_ADDRESS = "080bel042.meyan@pcampus.edu.np"
+EMAIL_ADDRESS = os.getenv("EMAIL")
 EMAIL_PASSWORD =  os.getenv("PASSWORD")
  
 DELAY_SECONDS = 1

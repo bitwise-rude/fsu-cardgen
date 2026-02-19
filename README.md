@@ -1,5 +1,5 @@
 # For FSU
-- Written by Meyan and Avi
+- Written by Meyan and Aadi
 - Copyright - Automation Team, FSU, Pulchowk Campus
 
 
