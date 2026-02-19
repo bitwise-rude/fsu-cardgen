@@ -2,12 +2,10 @@
 # Meyan, Aaditya , Avi
 
 import emails
-from dotenv import load_dotenv
 import csv
 from PIL import Image, ImageDraw, ImageFont
 import os
 
-load_dotenv()
 
 TEMPLATE_PATH = "data/template.png"
 CSV_PATH = "data/data.csv"

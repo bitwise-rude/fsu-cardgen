@@ -4,6 +4,7 @@
 #             Imports
 # ------------------------------
 
+from dotenv import load_dotenv
 import smtplib
 import time
 import os
@@ -13,12 +14,13 @@ from email.message import EmailMessage
 #           Constants
 # ---------------------------
 
+load_dotenv()
 SMTP_SERVER = "smtp.gmail.com"   
 SMTP_PORT = 587
 
 EMAIL_ADDRESS = "081bct002.aaditya@pcampus.edu.np"
-EMAIL_PASSWORD = ""
-
+EMAIL_PASSWORD =  os.getenv("PASSWORD")
+ 
 DELAY_SECONDS = 1
 MAX_EMAILS = 1500
 
