@@ -11,7 +11,7 @@ OUTPUT_DIR = "output"
 FONT_PATH = "data/font.ttf"
 FONT_SIZE = 60
 TEXT_COLOR = (20, 35, 60) 
-Y_POSITION = 780  
+Y_POSITION = 1015 
 
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
@@ -47,6 +47,7 @@ with open(CSV_PATH, newline='', encoding='utf-8') as csvfile:
         image.save(output_path)
 
         print(f"Generated: {output_path}")
+        break
 
 print("Done generating all invitations.")
 
