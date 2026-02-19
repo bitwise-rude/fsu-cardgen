@@ -1,6 +1,7 @@
 # Written and Maintained by The Automation Team - FSU
 # Meyan, Aaditya , Avi
 
+import emails
 import csv
 from PIL import Image, ImageDraw, ImageFont
 import os
@@ -24,6 +25,7 @@ with open(CSV_PATH, newline='', encoding='utf-8') as csvfile:
     reader = csv.DictReader(csvfile)
 
     for row in reader:
+        email = row['email'].strip()
         full_name = row["fullName"].strip()
         roll_no = row["classRollNo"].strip()
 
@@ -45,6 +47,9 @@ with open(CSV_PATH, newline='', encoding='utf-8') as csvfile:
 
         output_path = os.path.join(OUTPUT_DIR, f"{roll_no}.png")
         image.save(output_path)
+
+        # now we will send the freaking mail
+        emails.send_mail(roll_no,full_name,email)
 
         print(f"Generated: {output_path}")
         break
