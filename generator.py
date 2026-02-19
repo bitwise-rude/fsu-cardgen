@@ -11,7 +11,7 @@ OUTPUT_DIR = "output"
 FONT_PATH = "data/font.ttf"
 FONT_SIZE = 80 
 TEXT_COLOR = (20, 35, 60) 
-Y_POSITION = 985
+Y_POSITION = 975
 
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
