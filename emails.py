@@ -18,7 +18,7 @@ load_dotenv()
 SMTP_SERVER = "smtp.gmail.com"   
 SMTP_PORT = 587
 
-EMAIL_ADDRESS = "081bct002.aaditya@pcampus.edu.np"
+EMAIL_ADDRESS = "080bel042.meyan@pcampus.edu.np"
 EMAIL_PASSWORD =  os.getenv("PASSWORD")
  
 DELAY_SECONDS = 1
@@ -53,6 +53,8 @@ We sincerely hope you will join us and help make this event a meaningful occasio
 
 Warm regards,
 Free Students’ Union, Pulchowk Campus - 2081
+
+Schedule: https://docs.google.com/spreadsheets/d/1jW5cJdMD1hwT4eHGDdfm7luYJTG2uWEuaWbRRpTqIhc/edit?usp=sharing
                         """)
 
         image_path = f"output/{rollno}.png"
