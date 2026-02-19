@@ -44,7 +44,8 @@ def send_mail(rollno:str,firstname:str,email:str) -> None:
 
         msg.set_content(f"""
 Dear {firstname},
-            We are honored to invite you to the Annual General Meeting (AGM) organized by the Free Students’ Union, Pulchowk Campus - 2081, scheduled to be held on 9th Falgun, 2082, at the Library Hall, Pulchowk Campus.
+
+We are honored to invite you to the Annual General Meeting (AGM) organized by the Free Students’ Union, Pulchowk Campus - 2081, scheduled to be held on 9th Falgun, 2082, at the Library Hall, Pulchowk Campus.
 
 Your presence at this gathering will be highly valued as we reflect on the Union’s achievements over the past year, present the annual progress report, and engage in discussions on the future direction of our student body. The AGM will also include a certificate distribution ceremony to acknowledge the dedication and contributions of our members.
 
